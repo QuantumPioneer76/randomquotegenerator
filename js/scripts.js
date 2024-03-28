@@ -62,8 +62,9 @@ function generateQuote() {
     let arrayIndex = Math.floor(Math.random() * quotes.length);
     document.getElementById('quotation').innerHTML = '&quot;' + quotes[arrayIndex].quote + '&quot;';
     document.getElementById('author').innerHTML = quotes[arrayIndex].author;
+
 }
 window.onload = function () {
     generateQuote();
 }
-// document.getElementById('generate').addEventListener('click', generateQuote());
+document.getElementById('generate').addEventListener('click', generateQuote);
